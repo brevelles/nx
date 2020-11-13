@@ -252,7 +252,9 @@
     "yargs-parser": "20.0.0",
     "zone.js": "^0.10.0",
     "ejs": "^3.1.5",
-    "tsconfig-paths":"^3.9.0"
+    "tsconfig-paths":"^3.9.0",
+    "node-watch": "0.7.0",
+    "http-server": "0.12.3"
   },
   "author": "Victor Savkin",
   "license": "MIT",

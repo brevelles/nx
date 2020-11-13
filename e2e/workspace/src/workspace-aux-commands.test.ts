@@ -1,8 +1,8 @@
 import {
   checkFilesExist,
-  ensureProject,
   exists,
   forEachCli,
+  newProject,
   readFile,
   readJson,
   runCLI,
@@ -18,7 +18,7 @@ import { classify } from '@nrwl/workspace/src/utils/strings';
 
 forEachCli((cli) => {
   beforeAll(() => {
-    ensureProject();
+    newProject();
   });
 
   describe('lint', () => {

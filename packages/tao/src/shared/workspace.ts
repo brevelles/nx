@@ -39,8 +39,8 @@ export class Workspaces {
   }
 
   isNxBuilder(target: TargetDefinition) {
-    const { buildersJson } = this.readBuildersJson(target);
-    return buildersJson['$schema'] === '@nrwl/tao/src/builders-schema.json';
+    const schema = this.readBuilder(target).schema;
+    return schema['$schema'] === '@nrwl/tao/src/builders-schema.json';
   }
 
   isNxSchematic(collectionName: string, schematicName: string) {
